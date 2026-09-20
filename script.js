@@ -1,4 +1,3 @@
-
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const menu = document.querySelector(".menu-btn");
@@ -7,6 +6,7 @@ const nav = document.querySelector("nav");
 menu?.addEventListener("click", () => {
   const open = nav.style.display === "flex";
   nav.style.display = open ? "" : "flex";
+
   if (!open) {
     nav.style.position = "absolute";
     nav.style.top = "70px";
